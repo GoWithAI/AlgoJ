@@ -1,0 +1,14 @@
+A string is a sequence of characters. In other words, a string is an array of character data type. An instance of a string is called a string literal. For instance in C++: string s = "HackerEarth";  is a string literal.
+
+String Manipulation is a class of problems where a user is asked to process a given string and use/change its data. An example question would be a great way to understand the problems that are usually classified under this category.
+
+Given a string  of length , shift each character of the string by  positions to the right, where .
+For example: Say  = "hacker" and . Here .
+Shifting each character in  by  positions to the right would result into .
+Note that  i.e. 'h' is moved by 2 positions to the . Also,  i.e. 'r', which is the last character in  comes round-about back to  as there is no space for 'r' to go beyond the limits of string length.
+
+Approach:
+
+Declare another auxillary string  that is of the same size as.
+Copy  element of  to the  position in . This means,  where.
+Make sure that  never exceeds , because that will try to access a memory location which is not declared in . There's a simple trick to ensure that - use  
