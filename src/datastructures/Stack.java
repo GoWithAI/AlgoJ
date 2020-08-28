@@ -3,6 +3,7 @@ package datastructures;
 import java.util.EmptyStackException;
 
 //Stack Using Linked List
+// Stack/Queue Access-Search required traverse linkedlist O(n)  
 public class Stack {
 
 	private class Node {
@@ -24,6 +25,7 @@ public class Stack {
 		return head.data;
 	}
 
+	// O(1)
 	public void push(int data) {
 		// Create Node
 		// add head.next ref. to new node
@@ -34,6 +36,7 @@ public class Stack {
 		head = currentNode;
 	}
 
+	// O(1)
 	public int pop() {
 		if (head == null)
 			throw new EmptyStackException();
