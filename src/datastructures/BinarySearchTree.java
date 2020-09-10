@@ -24,6 +24,13 @@ public class BinarySearchTree {
 			else
 				return left.min();
 		}
+
+		public Node max() {
+			if (right == null)
+				return this;
+			else
+				return right.max();
+		}
 	}
 
 	Node root;
