@@ -1,4 +1,4 @@
-package datastructures;
+package datastructures.linkedlist;
 
 //No random access of Node possible
 // No Indexes , No Fixed capacity
@@ -144,18 +144,33 @@ public class LinkedList {
 		head = null;
 	}
 
-	//for small testing purpose only
+	// for small testing purpose only
 	public boolean contains(int data) {
 
 		Node currentNode = head;
-		if(currentNode.data == data)
+		if (currentNode.data == data)
 			return true;
-		
+
 		while (currentNode.next != null) {
 			if (currentNode.next.data == data)
 				return true;
 			currentNode = currentNode.next;
 		}
 		return false;
+	}
+
+	public Node reverse(Node node) {
+		Node prev = null;
+		Node next = null;
+		Node current = node;
+
+		while (current != null) {
+			next = current.next;
+			current.next = prev;
+			current = next;
+			prev = current;
+		}
+
+		return node;
 	}
 }
