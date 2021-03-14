@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import datastructures.BinarySearchTree;
+import datastructures.binaryTree.BinarySearchTree;
 
 public class TreeTest {
 

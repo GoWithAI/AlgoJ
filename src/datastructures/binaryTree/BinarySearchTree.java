@@ -1,4 +1,4 @@
-package datastructures;
+package datastructures.binaryTree;
 
 /**
  * 1. All Left Nodes are less Than Parent 2. All Right Nodes are grater Than
