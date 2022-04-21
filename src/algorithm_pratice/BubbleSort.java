@@ -9,6 +9,7 @@ public class BubbleSort {
 
 	}
 
+	//Time Complexity - O(n)
 	public static void bubbleSort(int[] arr, int arrLenght) {
 		int temp = 0;
 		boolean flag = false;
