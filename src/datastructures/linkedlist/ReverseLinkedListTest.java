@@ -19,7 +19,6 @@ public class ReverseLinkedListTest {
 
 	}
 
-
 	public Node reverse2(Node head) {
 
 		Node curr = head;
