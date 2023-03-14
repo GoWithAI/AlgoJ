@@ -1,6 +1,7 @@
-package datastructures;
+package dsa.queue;
 
-public class Queue {
+// By Using LinkedList
+public class QueueLL {
 
 	private class Node {
 		private int data;
@@ -31,8 +32,8 @@ public class Queue {
 		if (tail != null) {
 			tail.next = newNode;
 		}
-		//make newly added linked list as tail
-		//because newly added node is always Tail node
+		// make newly added linked list as tail
+		// because newly added node is always Tail node
 		tail = newNode;
 
 		// if head is null or adding first element
