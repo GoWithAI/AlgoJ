@@ -7,7 +7,7 @@ public class SwapElement {
 		int a = 3; // space is 1 unit
 		int b = 2; // space is 1 unit
 		int temp = 5; // space is 1 unit
-
+		
 		// space function f(3)=3
 		// space complexity O(1)
 
