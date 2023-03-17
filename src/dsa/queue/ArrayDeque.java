@@ -30,8 +30,8 @@ public class ArrayDeque {
 		if (size == 0)
 			throw new IllegalStateException("Queue is Empty");
 
+		int data = arr[front]; // front % CAPACITY
 		arr[front] = Integer.MIN_VALUE;
-		int data = arr[front];
 		front = (front + 1) % CAPACITY;
 		size--;
 		return data;
@@ -53,12 +53,11 @@ public class ArrayDeque {
 	// Print Queue as per sequence
 	public void print() {
 		System.out.println();
-
 		for (int i = 0; i < size; i++) {
 			int data2 = arr[(front + i) % CAPACITY];
 			System.out.print("  " + data2);
 		}
-
+		System.out.println();
 	}
 
 	public static void main(String[] args) {
@@ -68,8 +67,13 @@ public class ArrayDeque {
 		ad.enQueue(7);
 		ad.enQueue(9);
 		ad.enQueue(8);
+		ad.enQueue(4);
+		ad.enQueue(7);
+		ad.enQueue(9);
 		ad.print();
-		ad.deQueue();
+		int val = ad.deQueue();
+
+		System.out.println("dequeded Value :" + val);
 		ad.print();
 	}
 }
